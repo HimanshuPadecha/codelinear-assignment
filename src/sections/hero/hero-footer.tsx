@@ -2,7 +2,11 @@ import Image from "next/image";
 import React from "react";
 
 const ImageHolder = ({ path, alt }: { path: string; alt: string }) => {
-  return <Image src={path} alt={alt} height={100} width={100} />;
+  return (
+    <div className="relative w-[100px] md:w-[120px] lg:w-[140px] h-[30px] md:h-[40px] opacity-70 hover:opacity-100 transition-opacity">
+      <Image src={path} alt={alt} fill className="object-contain" />
+    </div>
+  );
 };
 
 const HeroFooter = () => {
@@ -15,9 +19,9 @@ const HeroFooter = () => {
     { path: "/hero/wavesmarathon.svg", alt: "wavesmarathon" },
   ];
   return (
-    <div className="w-[90%] flex flex-col gap-3">
-      <span>Trusted By:</span>
-      <div className="flex items-center justify-start gap-6">
+    <div className="w-full px-6 md:px-12 lg:px-24 flex flex-col gap-4 pb-12 mt-4 lg:mt-0">
+      <span className="text-gray-400 text-sm md:text-base font-medium">Trusted By:</span>
+      <div className="flex flex-wrap items-center justify-start gap-x-6 gap-y-4 md:gap-x-10 lg:gap-x-12">
         {images.map(({ path, alt }, index) => (
           <ImageHolder key={index} path={path} alt={alt} />
         ))}
