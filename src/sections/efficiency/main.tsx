@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Check } from "lucide-react";
 import { inter } from "@/app/fonts";
 
+import { FadeIn } from "@/components/fade-in";
+
 const EfficiencyMain = () => {
   const leftFeatures = [
     "Customer-On Boarding",
@@ -32,7 +34,7 @@ const EfficiencyMain = () => {
     <div className={`relative flex flex-col-reverse lg:flex-row items-center w-full px-6 md:px-12 lg:px-24 xl:px-[140px] py-20 lg:py-32 gap-16 lg:gap-12 bg-[#000d12] overflow-hidden min-h-[80vh] ${inter.className}`}>
       
       {/* Left Content - Laptop Image */}
-      <div className="lg:w-[50%] h-[400px] lg:h-[600px] z-10 relative mt-16 lg:mt-0 w-full flex items-center">
+      <FadeIn className="lg:w-[50%] h-[400px] lg:h-[600px] z-10 relative mt-16 lg:mt-0 w-full flex items-center">
         <div className="absolute right-[5%] lg:right-[15%] xl:right-[20%] top-1/2 -translate-y-1/2 w-[110%] lg:w-[125%] xl:w-[130%] flex flex-col items-center">
            
            {/* Laptop Screen Frame */}
@@ -53,10 +55,10 @@ const EfficiencyMain = () => {
            <div className="w-[105%] h-3 md:h-4 bg-[#000d12] border-[1.5px] border-[#0c2747] rounded-b-2xl rounded-t-sm ml-[-2.5%] -mt-px md:-mt-px z-20 shadow-2xl"></div>
            
         </div>
-      </div>
+      </FadeIn>
 
       {/* Right Content - Text and Features Grid */}
-      <div className="flex flex-col items-start gap-8 lg:w-[50%] z-10 relative lg:pl-10">
+      <FadeIn delay={0.2} className="flex flex-col items-start gap-8 lg:w-[50%] z-10 relative lg:pl-10">
         <h2 className="text-[32px] md:text-4xl lg:text-[40px] text-gray-100 font-medium tracking-tight leading-tight">
           Run a more efficient, flexible,and digitally <br className="hidden xl:block" /> connected corebanking system
         </h2>
@@ -79,7 +81,7 @@ const EfficiencyMain = () => {
             </div>
           </div>
         </div>
-      </div>
+      </FadeIn>
       
     </div>
   );

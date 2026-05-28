@@ -3,6 +3,8 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { inter } from "@/app/fonts";
 
+import { FadeIn } from "@/components/fade-in";
+
 const FooterMain = () => {
   return (
     <footer
@@ -10,7 +12,7 @@ const FooterMain = () => {
     >
       <div className="w-full flex flex-col lg:flex-row gap-16 lg:gap-24 mb-24">
         {/* Left Side: Large N7 Logo */}
-        <div className="w-full lg:w-[40%] flex items-start">
+        <FadeIn className="w-full lg:w-[40%] flex items-start">
           <div className="relative w-full max-w-[300px] h-[150px] lg:max-w-[400px] lg:h-[200px]">
             <Image
               src="/footer/n7-footer.svg"
@@ -20,10 +22,10 @@ const FooterMain = () => {
               unoptimized
             />
           </div>
-        </div>
+        </FadeIn>
 
         {/* Right Side: Grid of Links and Addresses */}
-        <div className="w-full lg:w-[60%] flex flex-col gap-16">
+        <FadeIn delay={0.2} className="w-full lg:w-[60%] flex flex-col gap-16">
           
           {/* Top Row: Addresses */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
@@ -101,15 +103,15 @@ const FooterMain = () => {
             </div>
           </div>
 
-        </div>
+        </FadeIn>
       </div>
 
       {/* Copyright */}
-      <div className="pt-8 text-[#5c7389] text-xs font-medium leading-[1.8] max-w-[900px] xl:max-w-[1000px] border-t border-[#1e2d3d]/50 lg:ml-auto">
+      <FadeIn delay={0.4} className="pt-8 text-[#5c7389] text-xs font-medium leading-[1.8] max-w-[900px] xl:max-w-[1000px] border-t border-[#1e2d3d]/50 lg:ml-auto">
         Copyright © 2022 by Linktia Infosystems Limited — [CB7 and N7 as
         Commercial Brand] — [Registered under the Companies Act 2006 in England
         and Wales | Number of Incorporation 13100992]
-      </div>
+      </FadeIn>
     </footer>
   );
 };

@@ -3,6 +3,8 @@ import { inter } from "@/app/fonts";
 import Button from "@/reuseables/button";
 import InsightCard from "./insight-card";
 
+import { FadeIn } from "@/components/fade-in";
+
 const insightsData = [
   {
     isFeatured: true,
@@ -36,7 +38,7 @@ const InsightsMain = () => {
 
       <div className="relative z-10 w-full flex flex-col lg:flex-row gap-16 lg:gap-24">
         {/* Left Column: Heading & Button */}
-        <div className="w-full lg:w-[40%] xl:w-[45%] flex flex-col items-start gap-12 lg:sticky lg:top-40 h-fit">
+        <FadeIn className="w-full lg:w-[40%] xl:w-[45%] flex flex-col items-start gap-12 lg:sticky lg:top-40 h-fit">
           <h2 className="text-[#eef1f6] text-4xl md:text-[44px] leading-[1.15] font-normal tracking-[-0.02em]">
             Get yourself up-to-speed on <br className="hidden lg:block" />
             all the things happening in <br className="hidden lg:block" />
@@ -55,24 +57,29 @@ const InsightsMain = () => {
           >
             INSIGHTS
           </Button>
-        </div>
+        </FadeIn>
 
         {/* Right Column: Grid of Cards */}
         <div className="w-full lg:w-[60%] xl:w-[55%] grid grid-cols-1 md:grid-cols-2 gap-6">
           {insightsData.map((data, index) => (
-            <InsightCard
+            <FadeIn
               key={index}
-              isFeatured={data.isFeatured}
-              category={data.category}
-              title={data.title}
-              author={data.author}
-              date={data.date}
-              imageSrc={data.imageSrc}
-            />
+              delay={0.1 * index}
+              className={data.isFeatured ? "md:col-span-2" : ""}
+            >
+              <InsightCard
+                isFeatured={data.isFeatured}
+                category={data.category}
+                title={data.title}
+                author={data.author}
+                date={data.date}
+                imageSrc={data.imageSrc}
+              />
+            </FadeIn>
           ))}
 
           {/* Bottom Right Link */}
-          <div className="md:col-span-2 flex justify-end mt-4">
+          <FadeIn delay={0.3} className="md:col-span-2 flex justify-end mt-4">
             <a
               href="#"
               className="text-[#008cff] hover:text-[#33a3ff] transition-colors text-[11px] font-semibold tracking-widest uppercase flex items-center gap-2"
@@ -82,7 +89,7 @@ const InsightsMain = () => {
                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </a>
-          </div>
+          </FadeIn>
         </div>
       </div>
     </section>

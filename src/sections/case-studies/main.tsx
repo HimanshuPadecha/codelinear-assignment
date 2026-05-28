@@ -3,6 +3,8 @@ import { inter } from "@/app/fonts";
 import CaseStudiesCarousel from "./carousel";
 import { CaseStudyData } from "./case-study-card";
 
+import { FadeIn } from "@/components/fade-in";
+
 const caseStudiesData: CaseStudyData[] = [
   {
     category: "GETTING STARTED",
@@ -39,12 +41,16 @@ const CaseStudiesMain = () => {
     <section className={`relative w-full bg-[#010b14] py-20 lg:py-32 overflow-hidden ${inter.className}`}>
       <div className="w-full flex flex-col items-center">
         {/* Title */}
-        <h2 className="text-[#f0f4f8] text-4xl md:text-[50px] font-normal tracking-tight mb-20 text-center">
-          Our Case Studies
-        </h2>
+        <FadeIn>
+          <h2 className="text-[#f0f4f8] text-4xl md:text-[50px] font-normal tracking-tight mb-20 text-center">
+            Our Case Studies
+          </h2>
+        </FadeIn>
 
         {/* Carousel */}
-        <CaseStudiesCarousel data={caseStudiesData} />
+        <FadeIn delay={0.2} className="w-full">
+          <CaseStudiesCarousel data={caseStudiesData} />
+        </FadeIn>
       </div>
     </section>
   );

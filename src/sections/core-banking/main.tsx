@@ -5,6 +5,8 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { inter } from "@/app/fonts";
 
+import { FadeIn } from "@/components/fade-in";
+
 const CoreBankingMain = () => {
   return (
     <div className="relative flex flex-col lg:flex-row items-center w-full px-6 md:px-12 lg:px-24 xl:px-[140px] py-20 lg:py-32 gap-12 bg-[#000d12] overflow-hidden min-h-[80vh]">
@@ -20,7 +22,7 @@ const CoreBankingMain = () => {
       </div>
 
       {/* Left Content */}
-      <div className="flex flex-col items-start gap-8 lg:w-[45%] z-10 relative">
+      <FadeIn className="flex flex-col items-start gap-8 lg:w-[45%] z-10 relative">
         <h2 className="text-4xl md:text-5xl lg:text-6xl text-gray-100 font-medium tracking-tight leading-[1.15]">
           A complete cloud-based <br className="hidden lg:block" /> core banking.
         </h2>
@@ -36,10 +38,10 @@ const CoreBankingMain = () => {
             LEARN MORE <ArrowRight strokeWidth={2} className="size-4" />
           </button>
         </div>
-      </div>
+      </FadeIn>
 
       {/* Right Content - Laptop Image */}
-      <div className="lg:w-[55%] h-[400px] lg:h-[600px] z-10 relative mt-16 lg:mt-0 w-full flex items-center">
+      <FadeIn delay={0.2} className="lg:w-[55%] h-[400px] lg:h-[600px] z-10 relative mt-16 lg:mt-0 w-full flex items-center">
         {/* Made it larger and pulled it leftwards as requested */}
         <div className="absolute left-[5%] lg:left-[10%] xl:left-[15%] top-1/2 -translate-y-1/2 w-[110%] lg:w-[115%] xl:w-[125%] flex flex-col items-center">
            
@@ -62,7 +64,7 @@ const CoreBankingMain = () => {
            <div className="w-[105%] h-3 md:h-4 bg-[#000d12] border-[1.5px] border-[#0c2747] rounded-b-2xl rounded-t-sm ml-[-2.5%] -mt-px md:-mt-px z-20 shadow-2xl"></div>
            
         </div>
-      </div>
+      </FadeIn>
       
     </div>
   );

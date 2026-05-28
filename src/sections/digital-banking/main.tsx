@@ -3,6 +3,8 @@ import Button from "@/reuseables/button";
 import CTAMain from "@/sections/cta/main";
 import FeatureRow from "./feature-row";
 
+import { FadeIn } from "@/components/fade-in";
+
 const featureRowsData = [
   {
     title: "Fully compliant with regulatory requirement",
@@ -85,7 +87,7 @@ const DigitalBankingMain = () => {
 
       <div className="relative z-10 flex flex-col lg:flex-row w-full px-6 md:px-12 lg:px-24 xl:px-[140px] gap-12 lg:gap-24">
         {/* Sticky Left Column: Title Area */}
-        <div className="relative w-full lg:w-[40%] flex flex-col items-start  lg:top-40 h-fit">
+        <FadeIn className="relative w-full lg:w-[40%] flex flex-col items-start  lg:top-40 h-fit">
           <h2 className="text-[#0a1420] text-4xl md:text-[50px] font-normal leading-[1.1] tracking-tight mb-6">
             Digital banking <br />
             out-of-the-box
@@ -120,32 +122,33 @@ const DigitalBankingMain = () => {
               </svg>
             </a>
           </div>
-        </div>
+        </FadeIn>
 
         {/* Right Column: Feature Rows */}
         <div className="w-full lg:w-[60%] flex flex-col gap-24 md:gap-32 items-center">
           {featureRowsData.map((data, index) => (
-            <FeatureRow
-              key={index}
-              title={data.title}
-              description={data.description}
-              bullets={data.bullets}
-              imageSrc={data.imageSrc}
-              imageAlt={data.imageAlt}
-              reverse={data.reverse}
-            />
+            <FadeIn key={index} delay={0.1}>
+              <FeatureRow
+                title={data.title}
+                description={data.description}
+                bullets={data.bullets}
+                imageSrc={data.imageSrc}
+                imageAlt={data.imageAlt}
+                reverse={data.reverse}
+              />
+            </FadeIn>
           ))}
         </div>
       </div>
 
       {/* Bottom CTA Card */}
-      <div className="relative z-10 w-full mt-24 md:mt-32 pb-10">
+      <FadeIn className="relative z-10 w-full mt-24 md:mt-32 pb-10">
         <CTAMain
           description="N7 helps your financial institution improve the client experience, automate and optimize procedures, simplify banking operations"
           logoSrc="/N7.svg"
           wrapperClassName="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20"
         />
-      </div>
+      </FadeIn>
     </section>
   );
 };

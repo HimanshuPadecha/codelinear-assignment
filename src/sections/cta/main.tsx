@@ -3,6 +3,8 @@ import Image from "next/image";
 import { inter } from "@/app/fonts";
 import Button from "@/reuseables/button";
 
+import { FadeIn } from "@/components/fade-in";
+
 interface CTAMainProps {
   description?: string;
   logoSrc?: string;
@@ -17,7 +19,7 @@ const CTAMain: React.FC<CTAMainProps> = ({
   return (
     <section className={`${wrapperClassName} ${inter.className}`}>
       {/* ── Card ── */}
-      <div className="relative w-full rounded-[28px] md:rounded-[36px] bg-linear-to-r from-[#031626] to-[#010b14] overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0 px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-14 md:py-[80px]">
+      <FadeIn className="relative w-full rounded-[28px] md:rounded-[36px] bg-linear-to-r from-[#031626] to-[#010b14] overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0 px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-14 md:py-[80px]">
         {/* ── Background SVG Logo ── */}
         <div
           aria-hidden="true"
@@ -82,7 +84,7 @@ const CTAMain: React.FC<CTAMainProps> = ({
             REQUEST DEMO
           </Button>
         </div>
-      </div>
+      </FadeIn>
     </section>
   );
 };
