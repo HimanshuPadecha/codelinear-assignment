@@ -44,13 +44,13 @@ const CoreBankingMain = () => {
         <div className="absolute left-[5%] lg:left-[10%] xl:left-[15%] top-1/2 -translate-y-1/2 w-[110%] lg:w-[115%] xl:w-[125%] flex flex-col items-center">
            
            {/* Laptop Screen Frame */}
-           <div className="relative w-full aspect-[16/10] bg-[#000d12] border-[1.5px] border-[#0c2747] rounded-t-2xl rounded-b-sm p-1.5 md:p-2 pb-2 md:pb-3 shadow-2xl">
+           <div className="relative w-full aspect-16/10 bg-[#000d12] border-[1.5px] border-[#0c2747] rounded-t-2xl rounded-b-sm p-1.5 md:p-2 pb-2 md:pb-3 shadow-2xl">
              <div className="relative w-full h-full bg-white overflow-hidden rounded-sm">
                <Image
                  src="/core-banking/dashboard.svg"
                  alt="Core Banking Dashboard"
                  fill
-                 className="object-cover object-left-top"
+                 className="object-cover object-top-left"
                  onError={(e) => {
                    e.currentTarget.style.opacity = '0';
                  }}
@@ -59,7 +59,7 @@ const CoreBankingMain = () => {
            </div>
            
            {/* Laptop Base */}
-           <div className="w-[105%] h-3 md:h-4 bg-[#000d12] border-[1.5px] border-[#0c2747] rounded-b-2xl rounded-t-sm -ml-[2.5%] -mt-[1px] md:-mt-[1px] z-20 shadow-2xl"></div>
+           <div className="w-[105%] h-3 md:h-4 bg-[#000d12] border-[1.5px] border-[#0c2747] rounded-b-2xl rounded-t-sm ml-[-2.5%] -mt-px md:-mt-px z-20 shadow-2xl"></div>
            
         </div>
       </div>

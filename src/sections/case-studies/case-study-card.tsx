@@ -33,7 +33,7 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ data }) => {
           <span className="text-[#005bb5] text-[10px] font-semibold tracking-widest uppercase mb-4 block">
             {data.category}
           </span>
-          <h3 className="text-[#eef1f6] text-[24px] lg:text-[32px] leading-[1.25] font-normal mb-8">
+          <h3 className="text-[#eef1f6] text-[24px] lg:text-[32px] leading-tight font-normal mb-8">
             {data.title}
           </h3>
           

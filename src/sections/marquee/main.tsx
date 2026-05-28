@@ -11,7 +11,7 @@ const Star = () => (
     strokeWidth="1"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="flex-shrink-0"
+    className="shrink-0"
   >
     <path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M4.9 19.1l14.2-14.2" />
   </svg>

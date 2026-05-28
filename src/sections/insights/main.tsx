@@ -47,7 +47,7 @@ const InsightsMain = () => {
             className="
               inline-flex items-center justify-center
               border border-[#2a3c4d] bg-transparent
-              hover:bg-white/[0.05] hover:border-white/30
+              hover:bg-white/0.05 hover:border-white/30
               text-[#dde6f0] text-[11px] font-medium tracking-[0.15em] uppercase
               px-10 py-4 rounded-[10px]
               transition-all duration-200 cursor-pointer

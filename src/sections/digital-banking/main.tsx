@@ -75,7 +75,7 @@ const DigitalBankingMain = () => {
           <img
             src="/N7.svg"
             alt="background n7"
-            className="w-full max-w-[75%] md:max-w-[65%] lg:max-w-[800px] h-auto object-left-top ml-8 md:ml-16 lg:ml-24"
+            className="w-full max-w-[75%] md:max-w-[65%] lg:max-w-[800px] h-auto object-top-left ml-8 md:ml-16 lg:ml-24"
           />
         </div>
 

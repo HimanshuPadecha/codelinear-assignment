@@ -35,7 +35,7 @@ const CTAMain: React.FC<CTAMainProps> = ({
         {/* ── Left: Copy ── */}
         <div className="relative z-10 flex flex-col gap-5 w-full lg:w-[52%] xl:w-[48%]">
           <h2
-            className="text-[#eef1f6] font-normal leading-[1.15] tracking-[-0.025em]"
+            className="text-[#eef1f6] font-normal leading-[1.15] tracking-tight"
             style={{ fontSize: "clamp(26px, 3.8vw, 50px)" }}
           >
             Take the full advantage of <br className="hidden sm:block" />
@@ -50,12 +50,12 @@ const CTAMain: React.FC<CTAMainProps> = ({
         </div>
 
         {/* ── Right: Buttons ── */}
-        <div className="relative z-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto lg:flex-shrink-0">
+        <div className="relative z-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto lg:shrink-0">
           <Button
             className="
               inline-flex items-center justify-center
-              border border-white/[0.18] bg-transparent
-              hover:bg-white/[0.05] hover:border-white/30
+              border border-white/0.18 bg-transparent
+              hover:bg-white/0.05 hover:border-white/30
               text-[#dde6f0] text-[11.5px] font-medium tracking-[0.13em] uppercase
               px-9 py-[15px] rounded-[10px]
               transition-all duration-200 cursor-pointer
