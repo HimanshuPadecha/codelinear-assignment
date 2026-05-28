@@ -3,24 +3,31 @@ import Image from "next/image";
 import { inter } from "@/app/fonts";
 import Button from "@/reuseables/button";
 
-const CTAMain = () => {
+interface CTAMainProps {
+  description?: string;
+  logoSrc?: string;
+  wrapperClassName?: string;
+}
+
+const CTAMain: React.FC<CTAMainProps> = ({
+  description = "CB7 helps your financial institution improve the client experience, automate and optimize procedures, simplify banking operations",
+  logoSrc = "/CB7-logo.svg",
+  wrapperClassName = "w-full bg-[#000d12] px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pt-10 pb-20 md:pt-14 md:pb-32 lg:pb-40",
+}) => {
   return (
-    <section
-      className={`w-full bg-[#000d12] px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-10 md:py-14 ${inter.className}`}
-    >
+    <section className={`${wrapperClassName} ${inter.className}`}>
       {/* ── Card ── */}
       <div className="relative w-full rounded-[28px] md:rounded-[36px] bg-linear-to-r from-[#031626] to-[#010b14] overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0 px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-14 md:py-[80px]">
-
-        {/* ── Background CB7 SVG Logo ── */}
+        {/* ── Background SVG Logo ── */}
         <div
           aria-hidden="true"
           className="pointer-events-none select-none absolute right-0 top-0 z-0 h-full w-[80%]"
         >
           <Image
-            src="/CB7-logo.svg"
-            alt="cb7 logo"
+            src={logoSrc}
+            alt="background logo"
             fill
-            className="object-contain object-right-center opacity-50"
+            className="object-contain object-right-center opacity-40 mix-blend-screen"
             priority
           />
         </div>
@@ -38,8 +45,7 @@ const CTAMain = () => {
             className="text-[14.5px] md:text-[15.5px] leading-[1.7] font-normal max-w-[440px]"
             style={{ color: "rgba(160, 185, 215, 0.70)" }}
           >
-            CB7 helps your financial institution improve the client experience,
-            automate and optimize procedures, simplify banking operations
+            {description}
           </p>
         </div>
 
