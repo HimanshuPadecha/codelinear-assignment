@@ -21,6 +21,11 @@ export default function Home() {
       <DigitalBankingMain />
       <InsightsMain />
       <CaseStudiesMain />
+      <CTAMain
+        showLogo={false}
+        variant="transparent"
+        wrapperClassName="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-20"
+      />
       <FooterMain />
     </main>
   );

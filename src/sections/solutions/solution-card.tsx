@@ -41,7 +41,7 @@ const SolutionCard = ({ title, description, iconPath, tag }: SolutionCardProps) 
         {description}
       </p>
       <button className="flex items-center gap-2 text-[#00a8e8] text-[12px] font-semibold tracking-wider hover:opacity-80 transition-opacity uppercase">
-        LEARN MORE <ArrowRight strokeWidth={2} className="size-4" />
+        <span className="border-b-[1.5px] border-current pb-0.5">LEARN</span> MORE <ArrowRight strokeWidth={2} className="size-4" />
       </button>
     </div>
   );

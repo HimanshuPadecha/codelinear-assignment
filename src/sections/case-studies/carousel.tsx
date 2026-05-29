@@ -118,7 +118,7 @@ const CaseStudiesCarousel: React.FC<CarouselProps> = ({ data }) => {
         {/* Right: View All */}
         <div className="relative md:absolute right-0 flex justify-center md:justify-end w-full md:w-auto">
           <a href="#" className="text-[#008cff] hover:text-[#33a3ff] transition-colors text-[11px] font-semibold tracking-widest uppercase flex items-center gap-2">
-            VIEW ALL 
+              <span className="border-b-[1.5px] border-current pb-0.5">VIEW</span> ALL 
             <ArrowRight className="w-3.5 h-3.5" strokeWidth={2} />
           </a>
         </div>

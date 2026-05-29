@@ -102,9 +102,9 @@ const DigitalBankingMain = () => {
             </Button>
             <a
               href="#"
-              className="text-[#0063f5] text-[11.5px] font-medium tracking-[0.13em] uppercase hover:underline flex items-center gap-2"
+              className="text-[#0063f5] text-[11.5px] font-medium tracking-[0.13em] uppercase flex items-center gap-2"
             >
-              LEARN MORE
+              <span className="border-b-[1.5px] border-current pb-0.5">LEARN</span> MORE
               <svg
                 width="12"
                 height="12"
