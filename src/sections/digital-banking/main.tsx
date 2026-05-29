@@ -50,7 +50,7 @@ const featureRowsData = [
 const DigitalBankingMain = () => {
   return (
     <section
-      className={`relative w-full bg-[#f4f8fc] py-20 lg:py-32 ${inter.className}`}
+      className={`relative w-full bg-[#f4f8fc] py-16 ${inter.className}`}
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         {/* Spiral Vector — behind left sticky column */}
@@ -125,7 +125,7 @@ const DigitalBankingMain = () => {
         </FadeIn>
 
         {/* Right Column: Feature Rows */}
-        <div className="w-full lg:w-[60%] flex flex-col gap-24 md:gap-32 items-center">
+        <div className="w-full lg:w-[60%] flex flex-col gap-24 md:gap-10 items-center">
           {featureRowsData.map((data, index) => (
             <FadeIn key={index} delay={0.1}>
               <FeatureRow

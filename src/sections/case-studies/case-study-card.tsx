@@ -16,19 +16,31 @@ interface CaseStudyCardProps {
 const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ data }) => {
   return (
     <div className="w-full h-full bg-[#051119] rounded-[24px] overflow-hidden flex flex-col md:flex-row shadow-2xl">
+
       {/* Image Area */}
-      <div className="w-full md:w-[45%] h-[250px] md:h-full relative bg-[#071321]">
-        <Image
-          src={data.imageSrc}
-          alt={data.title}
-          fill
-          className="object-cover"
-          unoptimized
-        />
+      <div className="w-full md:w-[45%] md:h-full relative bg-[#07193C] flex items-center justify-center h-[220px] sm:h-[260px]">
+        <div className="relative w-[60%] max-w-[220px] aspect-295/267 md:hidden">
+          <Image
+            src={data.imageSrc}
+            alt={data.title}
+            fill
+            className="object-contain"
+            unoptimized
+          />
+        </div>
+        <div className="absolute inset-0 hidden md:block">
+          <Image
+            src={data.imageSrc}
+            alt={data.title}
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
       </div>
 
       {/* Content Area */}
-      <div className="flex flex-col justify-between w-full md:w-[55%] p-8 lg:p-12">
+      <div className="flex flex-col justify-between w-full md:w-[55%] p-8 lg:p-12 flex-1">
         <div>
           <span className="text-[#005bb5] text-[10px] font-semibold tracking-widest uppercase mb-4 block">
             {data.category}
@@ -36,11 +48,17 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ data }) => {
           <h3 className="text-[#eef1f6] text-[24px] lg:text-[32px] leading-tight font-normal mb-8">
             {data.title}
           </h3>
-          
+
           <div className="flex items-center justify-start gap-2 text-[#7d92a8] text-sm font-medium mb-10">
             {data.clientLogoSrc ? (
               <div className="relative h-6 w-32">
-                <Image src={data.clientLogoSrc} alt={data.clientName} fill className="object-contain object-left" unoptimized />
+                <Image
+                  src={data.clientLogoSrc}
+                  alt={data.clientName}
+                  fill
+                  className="object-contain object-left"
+                  unoptimized
+                />
               </div>
             ) : (
               <span className="text-white text-base font-semibold flex items-center gap-2">

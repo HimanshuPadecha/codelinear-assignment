@@ -22,7 +22,7 @@ const CaseStudiesCarousel: React.FC<CarouselProps> = ({ data }) => {
   return (
     <div className="w-full flex flex-col items-center">
       {/* Cards Container */}
-      <div className="relative w-full max-w-[1200px] xl:max-w-[1400px] h-[450px] lg:h-[500px] flex justify-center items-center perspective-distant">
+      <div className="relative w-full max-w-[1200px] xl:max-w-[1400px] h-[600px] sm:h-[650px] md:h-[450px] lg:h-[500px] flex justify-center items-center perspective-distant">
         {data.map((item, index) => {
           // Determine position relative to activeIndex
           let offset = index - activeIndex;
@@ -64,7 +64,7 @@ const CaseStudiesCarousel: React.FC<CarouselProps> = ({ data }) => {
           return (
             <div
               key={index}
-              className="absolute w-[95%] md:w-[850px] lg:w-[1000px] xl:w-[1100px] h-full max-h-[400px] lg:max-h-[450px] transition-all duration-700 ease-out"
+              className="absolute w-[88%] md:w-[90%] lg:w-[900px] xl:w-[1100px] h-full max-h-[600px] sm:max-h-[650px] md:max-h-[400px] lg:max-h-[450px] transition-all duration-700 ease-out"
               style={{
                 transform: `translateX(${translate}) scale(${scale})`,
                 opacity: opacity,
@@ -79,12 +79,12 @@ const CaseStudiesCarousel: React.FC<CarouselProps> = ({ data }) => {
       </div>
 
       {/* Navigation Controls */}
-      <div className="mt-12 flex items-center justify-between w-full max-w-[850px] lg:max-w-[1000px] xl:max-w-[1100px] px-4 md:px-0 relative">
+      <div className="mt-8 md:mt-12 flex flex-col md:flex-row items-center justify-between w-full max-w-[850px] lg:max-w-[1000px] xl:max-w-[1100px] px-4 md:px-0 relative gap-6 md:gap-0">
         {/* Empty space for flex alignment to center the dots exactly */}
         <div className="w-24 hidden md:block"></div>
 
         {/* Center: Arrows and Dots */}
-        <div className="flex items-center gap-8 mx-auto">
+        <div className="flex items-center gap-6 md:gap-8 mx-auto">
           <button
             onClick={handlePrev}
             className="w-10 h-10 rounded-full border border-[#008cff] flex items-center justify-center text-[#008cff] hover:bg-[#008cff]/10 transition-colors"
@@ -116,7 +116,7 @@ const CaseStudiesCarousel: React.FC<CarouselProps> = ({ data }) => {
         </div>
 
         {/* Right: View All */}
-        <div className="absolute right-4 md:right-0">
+        <div className="relative md:absolute right-0 flex justify-center md:justify-end w-full md:w-auto">
           <a href="#" className="text-[#008cff] hover:text-[#33a3ff] transition-colors text-[11px] font-semibold tracking-widest uppercase flex items-center gap-2">
             VIEW ALL 
             <ArrowRight className="w-3.5 h-3.5" strokeWidth={2} />

@@ -27,14 +27,16 @@ const InsightCard: React.FC<InsightCardProps> = ({
       {/* Image Area (only for featured) */}
       {isFeatured && imageSrc && (
         <div className="w-full md:w-[45%] p-4 lg:p-6 flex">
-          <div className="relative w-full h-[200px] md:h-auto md:flex-1 rounded-[16px] overflow-hidden bg-[#081729]">
-            <Image
-              src={imageSrc}
-              alt={title}
-              fill
-              className="object-cover"
-              unoptimized
-            />
+          <div className="relative w-full h-[200px] sm:h-[240px] md:h-auto md:flex-1 rounded-[16px] overflow-hidden bg-[#07193C] flex items-center justify-center">
+            <div className="relative w-[60%] max-w-[220px] aspect-295/267">
+              <Image
+                src={imageSrc}
+                alt={title}
+                fill
+                className="object-contain"
+                unoptimized
+              />
+            </div>
           </div>
         </div>
       )}

@@ -14,12 +14,12 @@ interface CTAMainProps {
 const CTAMain: React.FC<CTAMainProps> = ({
   description = "CB7 helps your financial institution improve the client experience, automate and optimize procedures, simplify banking operations",
   logoSrc = "/CB7-logo.svg",
-  wrapperClassName = "w-full bg-[#000d12] px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pt-10 pb-20 md:pt-14 md:pb-32 lg:pb-40",
+  wrapperClassName = "w-full bg-[#000d12] px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20  pb-20 md:pt-14 md:pb-32 lg:pb-40",
 }) => {
   return (
     <section className={`${wrapperClassName} ${inter.className}`}>
       {/* ── Card ── */}
-      <FadeIn className="relative w-full rounded-[28px] md:rounded-[36px] bg-linear-to-r from-[#031626] to-[#010b14] overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0 px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-14 md:py-[80px]">
+      <FadeIn className="relative w-full rounded-[28px] md:rounded-[36px] bg-linear-to-r from-[#031626] to-[#010b14] overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0 px-8 sm:px-12 md:px-16 lg:px-16 xl:px-24 py-14 md:py-[80px]">
         {/* ── Background SVG Logo ── */}
         <div
           aria-hidden="true"

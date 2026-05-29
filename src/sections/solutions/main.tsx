@@ -42,7 +42,7 @@ const SolutionsMain = () => {
   ];
 
   return (
-    <div className={`flex flex-col lg:flex-row w-full px-6 md:px-12 lg:px-24 xl:px-[140px] py-20 lg:py-32 gap-12 lg:gap-24 bg-transparent ${inter.className}`}>
+    <div className={`flex flex-col lg:flex-row w-full px-6 md:px-12 lg:px-24 xl:px-[140px] pt-16 lg:pt-24 pb-8 lg:pb-8 gap-12 lg:gap-24 bg-transparent ${inter.className}`}>
       {/* Header Side */}
       <FadeIn className="flex flex-col items-start gap-12 lg:w-[40%] lg:sticky lg:top-40 h-fit">
         <h2 className="text-4xl md:text-5xl text-gray-100 font-normal tracking-tight leading-tight">

@@ -31,10 +31,10 @@ const EfficiencyMain = () => {
   );
 
   return (
-    <div className={`relative flex flex-col-reverse lg:flex-row items-center w-full px-6 md:px-12 lg:px-24 xl:px-[140px] py-20 lg:py-32 gap-16 lg:gap-12 bg-[#000d12] overflow-hidden min-h-[80vh] ${inter.className}`}>
+    <div className={`relative flex flex-col-reverse lg:flex-row items-center w-full px-6 md:px-12 lg:px-24 xl:px-[140px] lg:py-0 lg:gap-12 bg-[#000d12] overflow-hidden min-h-[80vh] ${inter.className} py-10 sm:py-20`}>
       
       {/* Left Content - Laptop Image */}
-      <FadeIn className="lg:w-[50%] h-[400px] lg:h-[600px] z-10 relative mt-16 lg:mt-0 w-full flex items-center">
+      <FadeIn className="lg:w-[50%] h-[400px] lg:h-[600px] z-10 relative  lg:mt-0 w-full flex items-center mt-6 sm:mt-20 md:mt-40">
         <div className="absolute right-[5%] lg:right-[15%] xl:right-[20%] top-1/2 -translate-y-1/2 w-[110%] lg:w-[125%] xl:w-[130%] flex flex-col items-center">
            
            {/* Laptop Screen Frame */}

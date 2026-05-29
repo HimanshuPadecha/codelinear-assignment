@@ -40,17 +40,17 @@ const FeatureRow: React.FC<FeatureRowProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col md:flex-row items-center gap-10 lg:gap-20 w-full ${
+      className={`flex flex-col md:flex-row items-center gap-20 w-full lg:gap-5 xl:gap-20 ${
         reverse ? "md:flex-row-reverse" : ""
       }`}
     >
       <div className="w-full md:w-1/2 flex justify-center">
-        <div className="relative w-[280px] h-[580px] md:w-[320px] md:h-[660px]">
+        <div className="relative w-[280px] h-[580px] md:w-[320px] md:h-[660px] lg:w-[400px] lg:h-[700px]">
           <Image
             src={imageSrc}
             alt={imageAlt}
             fill
-            className="object-cover"
+            className="object-contain h-full w-full"
             unoptimized
           />
         </div>

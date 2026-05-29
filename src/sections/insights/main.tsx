@@ -32,7 +32,7 @@ const insightsData = [
 
 const InsightsMain = () => {
   return (
-    <section className={`relative w-full bg-[#010910] py-20 lg:py-32 px-6 md:px-12 lg:px-24 xl:px-[140px] overflow-hidden ${inter.className}`}>
+    <section className={`relative w-full bg-[#010910] py-20 px-6 md:px-12 lg:px-24 xl:px-[140px] overflow-hidden lg:py-28 ${inter.className}`}>
       {/* Subtle blue glow on the left */}
       <div className="absolute top-1/2 left-[-10%] -translate-y-1/2 w-[40%] h-[60%] bg-[#0063f5] opacity-5 blur-[150px] pointer-events-none z-0"></div>
 
