@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Codelinear | Technical Assignment
 
-## Getting Started
+A modern, visually stunning fintech landing page built as a technical assignment for Codelinear. The application features a sleek dark-themed aesthetic, smooth scrolling animations, responsive layouts, and highly polished UI components.
 
-First, run the development server:
+## 🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project leverages cutting-edge web technologies:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework**: [Next.js](https://nextjs.org/) (v16) with App Router
+- **UI Library**: [React](https://react.dev/) (v19)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (v4)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Typography**: `next/font/google` (Inter & Geist)
+- **Language**: TypeScript
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Pixel-Perfect UI**: Precisely aligns with the provided Figma/design requirements, featuring custom blue gradients (`bg-linear-to-r from-[#00b4fd] to-[#0047b8]`), translucent glassmorphism effects, and highly refined typographic hierarchies.
+- **Smooth Animations**: Uses `Framer Motion` extensively for elegant viewport-triggered fade-ins, sliding carousels, and infinite marquee scrolls.
+- **Responsive Design**: Built mobile-first, gracefully adapting layouts from small screens all the way up to ultra-wide displays (using custom breakpoints and grid/flex reflows).
+- **Reusable Components**: Heavily componentized architecture (e.g., `<Button />`, `<FadeIn />`, `<CTAMain />`) for maximum maintainability and consistency.
+- **Optimized Assets**: Next.js `<Image />` tags are used universally for performant, layout-shift-free media delivery.
 
-## Learn More
+## 💻 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+Follow these instructions to set up the project locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/HimanshuPadecha/codelinear-assignment
+   cd codelinear-assignment
+   ```
 
-## Deploy on Vercel
+2. **Install dependencies:**
+   Make sure you are running a recent version of Node.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **View the app:**
+   Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
+
+## 📂 Project Structure
+
+- `src/app/`: Next.js App Router configuration, global CSS, layout, and fonts.
+- `src/components/`: Reusable, cross-section utility components (like the `FadeIn` animation wrapper).
+- `src/reuseables/`: Core UI building blocks (like the primary `Button` component).
+- `src/sections/`: Modularized page sections (Hero, Core Banking, Solutions, Digital Banking, CTA, Footer, etc.). Each section has its own dedicated directory and logic to ensure clean separation of concerns.
+
+## 🚢 Deployment
+
+This application is ready to be deployed to [Vercel](https://vercel.com). The deployment process is fully optimized and handles custom font loading (`Inter`) and Tailwind v4 compilation natively.
