@@ -51,7 +51,7 @@ const CTAMain: React.FC<CTAMainProps> = ({
             className="text-[#eef1f6] font-normal leading-[1.15] tracking-tight"
             style={{ fontSize: "clamp(26px, 3.8vw, 50px)" }}
           >
-            Take the full advantage of <br className="hidden sm:block" />
+            Take the full advantage of 
             going paper-less now.
           </h2>
           <p

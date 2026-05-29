@@ -33,8 +33,8 @@ const FooterMain = () => {
             <div>
               <h4 className="text-white text-base font-medium mb-6">London</h4>
               <p className="text-[#a3b1c6] text-sm leading-relaxed max-w-[250px]">
-                Linktia Infosystems Ltd – CB7, <br />
-                26 Main Road Sundridge, TN14 6EP, <br />
+                Linktia Infosystems Ltd – CB7,
+                26 Main Road Sundridge, TN14 6EP, 
                 England, United Kingdom.
               </p>
             </div>
@@ -43,9 +43,9 @@ const FooterMain = () => {
             <div>
               <h4 className="text-white text-base font-medium mb-6">Dubai</h4>
               <p className="text-[#a3b1c6] text-sm leading-relaxed max-w-[250px]">
-                Linktia Infosystems Ltd – <br />
-                CB7, Jumeirah Business, Center 5 <br />
-                Cluster W, Jumeirah Lakes Towers, <br />
+                Linktia Infosystems Ltd – 
+                CB7, Jumeirah Business, Center 5 
+                Cluster W, Jumeirah Lakes Towers, 
                 Dubai, United Arab Emirates
               </p>
             </div>
@@ -55,9 +55,9 @@ const FooterMain = () => {
               {/* Note: The image shows London but the address is Pune, India. Kept exact wording from image. */}
               <h4 className="text-white text-base font-medium mb-6">London</h4>
               <p className="text-[#a3b1c6] text-sm leading-relaxed max-w-[250px]">
-                Linktia Infosystems Ltd – <br />
-                CB7, Nirmal, Anand Nagar, <br />
-                Suncity Road, Pune, <br />
+                Linktia Infosystems Ltd – 
+                CB7, Nirmal, Anand Nagar, 
+                Suncity Road, Pune, 
                 Maharashtra, 411041, India
               </p>
             </div>

@@ -60,7 +60,7 @@ const EfficiencyMain = () => {
       {/* Right Content - Text and Features Grid */}
       <FadeIn delay={0.2} className="flex flex-col items-start gap-8 lg:w-[50%] z-10 relative lg:pl-10">
         <h2 className="text-[32px] md:text-4xl lg:text-[40px] text-gray-100 font-medium tracking-tight leading-tight">
-          Run a more efficient, flexible,and digitally <br className="hidden xl:block" /> connected corebanking system
+          Run a more efficient, flexible,and digitally connected corebanking system
         </h2>
         
         <div className="flex flex-col gap-6 w-full mt-2">

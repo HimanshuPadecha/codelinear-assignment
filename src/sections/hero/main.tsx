@@ -21,20 +21,20 @@ const HeroMain = () => {
   ];
 
   return (
-    <div className={`flex items-center flex-col min-h-screen ${inter.className}`}>
+    <div
+      className={`flex items-center flex-col min-h-screen ${inter.className}`}
+    >
       <Navbar />
 
       <div className="flex flex-col lg:flex-row w-full py-12 lg:py-24 relative overflow-hidden">
         {/* info holder */}
         <FadeIn className="flex justify-center items-start flex-col w-full lg:w-[50%] px-6 md:px-12 lg:px-24 py-10 lg:py-20 gap-5 z-10">
           <h2 className="text-5xl md:text-6xl  font-medium tracking-tight leading-[1.1]">
-            The new foundation <br className="hidden lg:block" /> of modern
-            banking
+            The new foundation of modern banking
           </h2>
           <span className="text-base md:text-lg text-gray-400 mt-2">
-            We drive innovation and growth, provide seamless{" "}
-            <br className="hidden md:block" /> customer experience and
-            operational excellence
+            We drive innovation and growth, provide seamless customer experience
+            and operational excellence
           </span>
           <div className="flex flex-col sm:flex-row gap-4 mt-6 w-full sm:w-auto">
             {middleButtons.map(

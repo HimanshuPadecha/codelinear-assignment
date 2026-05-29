@@ -20,8 +20,8 @@ const CoreBankingMain = () => {
 
       {/* Left Content */}
       <FadeIn className="flex flex-col items-start gap-8 lg:w-[45%] z-10 relative">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl text-gray-100 font-medium tracking-tight leading-[1.15]">
-          A complete cloud-based <br className="hidden lg:block" /> core
+        <h2 className="text-4xl md:text-5xl text-gray-100 font-medium tracking-tight leading-[1.15]">
+          A complete cloud-based core
           banking.
         </h2>
         <p className="text-[#a1a1aa] text-[17px] leading-relaxed max-w-md">

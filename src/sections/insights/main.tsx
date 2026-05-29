@@ -40,8 +40,8 @@ const InsightsMain = () => {
         {/* Left Column: Heading & Button */}
         <FadeIn className="w-full lg:w-[40%] xl:w-[45%] flex flex-col items-start gap-12 lg:sticky lg:top-40 h-fit">
           <h2 className="text-[#eef1f6] text-4xl md:text-[44px] leading-[1.15] font-normal tracking-[-0.02em]">
-            Get yourself up-to-speed on <br className="hidden lg:block" />
-            all the things happening in <br className="hidden lg:block" />
+            Get yourself up-to-speed on
+            all the things happening in 
             fintech
           </h2>
           

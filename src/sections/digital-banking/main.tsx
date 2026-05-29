@@ -88,7 +88,7 @@ const DigitalBankingMain = () => {
         {/* Sticky Left Column: Title Area */}
         <FadeIn className="relative w-full lg:w-[40%] flex flex-col items-start  lg:top-40 h-fit">
           <h2 className="text-[#0a1420] text-4xl md:text-[50px] font-normal leading-[1.1] tracking-tight mb-6">
-            Digital banking <br />
+            Digital banking 
             out-of-the-box
           </h2>
           <p className="text-[#4b5b6d] text-sm md:text-[15px] leading-relaxed mb-8">
