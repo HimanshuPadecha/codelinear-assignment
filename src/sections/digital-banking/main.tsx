@@ -84,7 +84,7 @@ const DigitalBankingMain = () => {
         <div className="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-[#0063f5] opacity-10 rounded-full blur-[120px]"></div>
       </div>
 
-      <div className="relative z-10 flex flex-col lg:flex-row w-full px-6 md:px-12 lg:px-24 xl:px-[140px] gap-12 lg:gap-24">
+      <div className="relative z-10 flex flex-col lg:flex-row w-full px-6 md:px-12 lg:px-24 xl:px-[140px] gap-12 lg:gap-16">
         {/* Sticky Left Column: Title Area */}
         <FadeIn className="relative w-full lg:w-[40%] flex flex-col items-start  lg:top-40 h-fit">
           <h2 className="text-[#0a1420] text-4xl md:text-[50px] font-normal leading-[1.1] tracking-tight mb-6">
