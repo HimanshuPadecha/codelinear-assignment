@@ -49,7 +49,7 @@ const Navbar = () => {
               {text} {haveIcon && <ChevronDownIcon strokeWidth={1.5} className="size-5 opacity-90"/>}
             </span>
           ))}
-          <Button className="w-full mt-2 border border-gray-400 text-white bg-transparent hover:bg-white/10 py-2.5 rounded-lg transition-colors text-[13px] tracking-wider">
+          <Button className="w-full mt-2 bg-linear-to-r from-[#00b4fd] to-[#0047b8] text-white py-2.5 rounded-lg transition-colors text-[13px] tracking-wider hover:opacity-90 border-none">
             REQUEST DEMO
           </Button>
         </div>

@@ -67,8 +67,8 @@ const CTAMain: React.FC<CTAMainProps> = ({
           <Button
             className="
               inline-flex items-center justify-center
-              border border-white/[0.18] bg-transparent
-              hover:bg-white/[0.05] hover:border-white/30
+              border border-white/0.18 bg-transparent
+              hover:bg-white/0.05 hover:border-white/30
               text-[#dde6f0] text-[11.5px] font-medium tracking-[0.13em] uppercase
               px-9 py-[15px] rounded-[10px]
               transition-all duration-200 cursor-pointer
@@ -81,10 +81,9 @@ const CTAMain: React.FC<CTAMainProps> = ({
           <Button
             className="
               inline-flex items-center justify-center
-              bg-[#0063f5] hover:bg-[#0054d4] active:bg-[#0047b8]
-              text-white text-[11.5px] font-medium tracking-[0.13em] uppercase
+              bg-linear-to-r from-[#00b4fd] to-[#0047b8] text-white text-[11.5px] font-medium tracking-[0.13em] uppercase
               px-9 py-[15px] rounded-[10px]
-              transition-all duration-200 cursor-pointer
+              transition-all duration-200 cursor-pointer hover:opacity-90 border-none
               whitespace-nowrap
             "
           >

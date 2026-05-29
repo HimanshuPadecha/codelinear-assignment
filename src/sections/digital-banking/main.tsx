@@ -2,7 +2,6 @@ import { inter } from "@/app/fonts";
 import Button from "@/reuseables/button";
 import CTAMain from "@/sections/cta/main";
 import FeatureRow from "./feature-row";
-
 import { FadeIn } from "@/components/fade-in";
 
 const featureRowsData = [
@@ -97,14 +96,14 @@ const DigitalBankingMain = () => {
             automate and optimize procedures
           </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <Button className="bg-[#0063f5] hover:bg-[#0054d4] text-white text-[11.5px] font-medium tracking-[0.13em] uppercase px-9 py-[15px] rounded-[10px] whitespace-nowrap transition-all duration-200 cursor-pointer">
+            <Button className="bg-linear-to-r from-[#00b4fd] to-[#0047b8] text-white text-[11.5px] font-medium tracking-[0.13em] uppercase px-9 py-[15px] rounded-[10px] whitespace-nowrap transition-all duration-200 cursor-pointer hover:opacity-90 border-none">
               REQUEST DEMO
             </Button>
             <a
               href="#"
               className="text-[#0063f5] text-[11.5px] font-medium tracking-[0.13em] uppercase flex items-center gap-2"
             >
-              <span className="border-b-[1.5px] border-current pb-0.5">LEARN</span> MORE
+              <span className="underline underline-offset-4 decoration-[1.5px]">LEARN</span> MORE
               <svg
                 width="12"
                 height="12"

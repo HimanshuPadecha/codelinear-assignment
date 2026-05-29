@@ -29,11 +29,11 @@ const CoreBankingMain = () => {
         </p>
 
         <div className="flex flex-col items-start gap-8 mt-2">
-          <Button className="bg-[#0066ff] hover:bg-[#0052cc] text-white py-3.5 px-8 rounded-lg transition-colors text-[13px] font-medium tracking-wide">
+          <Button className="bg-linear-to-r from-[#00b4fd] to-[#0047b8] text-white py-3.5 px-8 rounded-lg transition-colors text-[13px] font-medium tracking-wide hover:opacity-90 border-none">
             REQUEST DEMO
           </Button>
           <button className="flex items-center gap-2 text-[#00a8e8] text-[13px] font-semibold tracking-wider hover:opacity-80 transition-opacity uppercase">
-            <span className="border-b-[1.5px] border-current pb-0.5">LEARN</span> MORE <ArrowRight strokeWidth={2} className="size-4" />
+            <span className="underline underline-offset-4 decoration-[1.5px]">LEARN</span> MORE <ArrowRight strokeWidth={2} className="size-4" />
           </button>
         </div>
       </FadeIn>

@@ -16,7 +16,7 @@ const SolutionCard = ({ title, description, iconPath, tag }: SolutionCardProps) 
       <div className="flex justify-between items-start w-full mb-6 md:mb-8">
         <div className="relative w-10 h-10 md:w-12 md:h-12">
           {/* Fallback styling for when SVG is missing */}
-          <div className="absolute inset-0 bg-gray-800/40 rounded animate-pulse -z-10" />
+          <div className="absolute inset-0 rounded animate-pulse -z-10" />
           <Image 
             src={iconPath} 
             alt={title} 
@@ -41,7 +41,7 @@ const SolutionCard = ({ title, description, iconPath, tag }: SolutionCardProps) 
         {description}
       </p>
       <button className="flex items-center gap-2 text-[#00a8e8] text-[12px] font-semibold tracking-wider hover:opacity-80 transition-opacity uppercase">
-        <span className="border-b-[1.5px] border-current pb-0.5">LEARN</span> MORE <ArrowRight strokeWidth={2} className="size-4" />
+        <span className="underline underline-offset-4 decoration-[1.5px]">LEARN</span> MORE <ArrowRight strokeWidth={2} className="size-4" />
       </button>
     </div>
   );

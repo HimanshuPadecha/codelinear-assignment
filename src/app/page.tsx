@@ -8,6 +8,7 @@ import MarqueeMain from "@/sections/marquee/main";
 import CaseStudiesMain from "@/sections/case-studies/main";
 import InsightsMain from "@/sections/insights/main";
 import FooterMain from "@/sections/footer/main";
+import CTAMainHolder from "@/sections/cta/cta-main-holder";
 
 export default function Home() {
   return (
@@ -21,11 +22,7 @@ export default function Home() {
       <DigitalBankingMain />
       <InsightsMain />
       <CaseStudiesMain />
-      <CTAMain
-        showLogo={false}
-        variant="transparent"
-        wrapperClassName="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-20"
-      />
+      <CTAMainHolder />
       <FooterMain />
     </main>
   );
