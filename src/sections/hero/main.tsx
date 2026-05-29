@@ -26,7 +26,7 @@ const HeroMain = () => {
     >
       <Navbar />
 
-      <div className="flex flex-col lg:flex-row w-full py-12 lg:py-24 relative overflow-hidden">
+      <div className="flex flex-col lg:flex-row w-full mt-20 lg:mt-24 py-12 lg:py-24 relative overflow-hidden">
         {/* info holder */}
         <FadeIn className="flex justify-center items-start flex-col w-full lg:w-[50%] px-6 md:px-12 lg:px-24 py-10 lg:py-20 gap-5 z-10">
           <h2 className="text-5xl md:text-6xl  font-medium tracking-tight leading-[1.1]">

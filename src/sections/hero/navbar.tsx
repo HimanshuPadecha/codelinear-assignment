@@ -17,7 +17,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="relative flex items-center justify-between w-[95%] lg:w-[85%] xl:w-[65%] rounded-xl mt-6 px-4 md:px-5 py-2.5 bg-[#212526] text-white z-50">
+    <nav className="fixed top-6 left-1/2 -translate-x-1/2 flex items-center justify-between w-[95%] lg:w-[85%] xl:w-[65%] rounded-xl px-4 md:px-5 py-2.5 bg-[#212526] text-white z-100">
       <span className="text-[22px]">N7</span>
       <div
         className={`hidden md:flex items-center justify-center gap-6 lg:gap-8 ${inter.className}`}
